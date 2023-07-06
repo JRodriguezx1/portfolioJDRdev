@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.flechaup{
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    border-radius: 50%;
+    z-index: 2;
+    a{
+        background-color: hsla(0, 0%, 40%, .9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        border: 1px solid v.$grisoscuro;
+        i{
+            font-size: 2rem;
+            color: v.$grisclaro;
+        }
+        &:hover{
+            background-color: v.$background1;
+        }
+    }
+}

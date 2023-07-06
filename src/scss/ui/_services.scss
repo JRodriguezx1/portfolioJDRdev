@@ -1,0 +1,108 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.services{
+    background-color: v.$background2;
+    position: relative;
+    &__contenedor{
+        @include m.contenedor;
+        padding-bottom: 18rem;
+    }
+    &__titulos{
+        color: v.$blanco;
+        text-align: center;
+        padding: 6rem 0 4rem 0;
+    }
+    &__all{
+       text-align: center;
+       @include m.grid(1, 2rem);
+       @include m.tablet{
+           @include m.grid(2, 2rem);
+       }
+       @include m.desktop{
+        @include m.grid(3, 2rem);
+       }
+    }
+    &__service{
+        background-color: v.$background1;
+        padding: 3rem;
+    }
+
+    &__marco{
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+    }
+    &__icon{ //= div
+        position: relative;
+        z-index: 1;
+        width: 10rem;
+        height: 10rem;
+        border: 1px solid v.$blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &::after{
+            position: absolute;
+            top: 0%;
+            transform: translateY(-50%);
+            content: " ";
+            width: 1.7rem;
+            height: 1.7rem;
+            clip-path: circle();
+            background-color: v.$grisraton;
+        }
+        &::before{
+            position: absolute;
+            bottom: 0%;
+            transform: translateY(50%);
+            content: " ";
+            width: 1.7rem;
+            height: 1.7rem;
+            clip-path: circle();
+            background-color: v.$grisraton;
+        }
+
+        animation: rotacion 2s linear infinite;
+        animation-play-state: paused;
+        &:hover{
+            //transform: rotate(0deg);
+            //animation: rotacion 2s linear infinite;
+            animation-play-state: running;
+        }
+        @keyframes rotacion {
+            0%{
+                transform: rotate(-25deg);
+            }
+            100%{
+                transform: rotate(335deg);
+            }
+        }
+    }
+    i{
+        font-size: 3.5rem;
+        color: v.$grisclaro;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h3{
+        color: v.$blanco;
+        padding: 2rem 0;
+    }
+    p{
+        color: v.$blancoclaro;
+        line-height: 1.5;
+    }
+    svg{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        fill: v.$background1;
+    }
+}

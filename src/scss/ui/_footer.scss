@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.foter{
+    padding: 4rem;
+    background-color: v.$background2;
+    &__logo{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    &__rrss{  // = div
+        .menu-redes{ // = nav estilos en componentes/_rrss.scss
+            a{
+                background-color: #333;
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    &::before{
+                        color: v.$blanco;
+                    }
+                }
+            }
+        }
+    }
+
+    &__copyright{
+        color: v.$blancoclaro;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

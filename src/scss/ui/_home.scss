@@ -1,0 +1,127 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.home{
+    position: relative;
+    z-index: 3;
+    height: 45rem;
+    @include m.telefono{
+        height: 60rem;
+    }
+    @include m.xl_tablet{
+        height: 100vh;
+    }
+    
+    //background-image: url(../img/grafico.svg), url(../img/grafico.svg), linear-gradient(to right, rgba(v.$negro, 1), rgba(v.$negro, .5)), url(../img/header.jpg);
+
+    //background-image: url(../img/grafico.svg), url(../img/grafico.svg), linear-gradient(to right, rgba(v.$negro, 1), rgba(v.$negro, .5)), image-set(url(../img/header.avif) 1x, url(../img/header.webp) 1x, url(../img/header.jpg) 1x);
+                                                                                            //image-set() selecciona de manera automatica la mejor imagen... y con autoprefixer me agega prefijos para los diferentes navegadores como webkit-image-set
+    background-image: linear-gradient(to left, rgba(v.$negroblack, .2), rgba(v.$background1, .8)), url(/build/img/home4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+ 
+    display: flex;            //me
+    align-items: center;      //centra el
+    justify-content: center;  // contenedor de abajo
+
+    &__contenedor{
+        @include m.contenedor-sm;
+    }
+
+    &__descripcion{
+        p, h1, a{
+            color: v.$blanco;
+        }
+        p{
+            display: flex;
+            &::after{
+                content: ''; 
+                width: 60px;
+                height: 1px;
+                display: inline-block;
+                background-color: v.$blanco;
+                align-self: center;
+                margin-left: 1rem;
+                transition: margin .6s ease;
+            }
+        }
+        h1{
+            @include m.texto_fluido(2.4rem, 3.6rem );
+            margin: 2rem 0;
+        }
+        &:hover{
+            p{
+                &::after{
+                    margin-left: 4rem
+                }
+            }
+        }
+    }
+    &__mensaje{  // mensaje cuando se envia el form
+        color: v.$blanco;
+        position: absolute;
+        left: 5%;
+        bottom: 12%
+    }
+    .maquina-escribir{
+        display:inline-flex;
+        white-space: nowrap;
+        border-right: 4px solid v.$blanco;
+        width: 24rem;
+        //width: 28ch;
+        animation: escribir 4s steps(18), blinks .5s infinite step-end alternate;
+        overflow: hidden;
+            
+        @keyframes escribir {
+            from{ width: 0;}
+        }
+        @keyframes blinks {
+            50% {border-color: transparent;}
+        }
+    }
+
+    &__btn1{
+        @include m.btn1(transparent, v.$blanco);
+        &:hover{
+            background-color: darken(v.$blanco, 10);
+            color: v.$grisoscuro;
+        }
+        width: auto;
+    }
+    &__aboutme{ // = <a></a>
+        position: absolute;
+        color: v.$blanco;
+        font-size: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10%;
+        animation: aboutme 1.2s ease-out infinite;
+    }
+    @keyframes aboutme {
+        0%{
+            bottom: 10%;
+            opacity: 0;
+        }
+        16%{
+            bottom: 9%;
+            opacity: .1;
+        }
+        32%{
+            bottom: 8%;
+            opacity: .3;
+        }
+        100%{
+            bottom: 4%;
+            opacity: 1;
+        }
+    }
+
+    svg{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        fill: v.$background1;
+    }
+
+}

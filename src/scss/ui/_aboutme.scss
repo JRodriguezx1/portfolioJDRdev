@@ -1,0 +1,237 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.aboutme{
+    background-color: v.$background1;
+    position: relative;
+    &__contenedor{
+        @include m.contenedor;
+        padding-bottom: 18rem;
+    }
+    &__titulos{
+        padding: 8rem 0;
+        position: relative;
+        text-align: center;
+        h1{
+            color: lighten(v.$background1, 5);
+            @include m.texto_fluido(6rem, 12rem);
+        }
+        &--mywork{ //modificador que solo aplica a la seccion de mywork = portafolio
+            @extend .aboutme__titulos;
+            h1{
+                color: lighten(v.$background1, 5);
+                @include m.texto_fluido(5rem, 12rem);
+            }
+        }
+        p{
+            @include m.texto_fluido(3rem, 4rem);
+            font-weight: 500;
+            color: v.$blanco;
+            position: absolute;
+            top: 60%;
+            width: 100%;
+            @include m.tablet{
+                top: 42%;
+            }
+            //transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+            &::after{
+                margin-top: 1rem;
+                display: block;
+                content: "";
+                width: 80px;
+                height: 2px;
+                background-color: v.$secundario;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__personalinformation{
+        @include m.xl_tablet{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    &__perfil{
+        text-align: center;
+        @include m.xl_tablet{
+            text-align: left;
+        }
+    }
+    &__perfiltitulo{
+        color: v.$blanco;
+        margin-bottom: 2rem;
+        span{
+            color: v.$secundario;
+        }
+    }
+    &__perfildescripcion{
+        line-height: 1.8;
+        color: v.$blancoclaro;
+        font-size: 1.6rem;
+    }
+    &__personaldata{
+        margin-top: 6rem;
+        @include m.xl_tablet{
+            margin: unset;
+        }
+        
+        color: v.$blanco;
+        p{
+            font-size: 1.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            border-bottom: 1px solid lighten(v.$background1, 8);
+            padding: 2rem 0;
+            &:nth-of-type(3){
+                border-bottom: none;
+            }
+            span{
+                color: v.$blancoclaro;
+                font-weight: 300;
+            }
+        }
+        .home__contbtn{
+            margin-top: 3rem;
+        }
+    }
+
+    &__contadores{
+        color: v.$blanco;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 6rem;
+        padding-bottom: 1rem;
+    }
+    &__contador{
+        text-align: center;
+        span{
+            font-size: 4.5rem;
+            font-weight: 500;
+        }
+        p{
+            margin-top: 1.5rem;
+            color: v.$blancoclaro;
+            font-size: 1.6rem;
+        }
+    }
+
+    svg{ // linea montañoza inferior
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        fill: v.$background2;
+    }
+}
+
+///////////styles al html de sweetalert2////////////////
+.skills{
+    background-color: v.$background1;
+    padding: 3rem;
+    &__container{
+
+    }
+    &__heading{
+        color: v.$blanco;
+        padding: 5rem 0 4rem 0;
+    }
+    &__contenido{
+        @include m.grid(1, 3rem);
+        @include m.telefono{
+            @include m.grid(2, 4rem);
+        }
+        @include m.tablet{
+            @include m.grid(3, 4rem);
+        }
+        @include m.xl_tablet{
+            @include m.grid(4, 4rem);
+        }
+    }
+    &__skill{
+        position: relative;
+        width: 160px;
+        //height: 160px;
+        .afuera{
+            width: 160px;
+            height: 160px;
+            /*border: 1px solid #c0e3ee;*/
+            box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, .15), -4px -4px 12px -1px rgba(255, 255, 255, .7);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .adentro{
+                width: 120px;
+                height: 120px;
+                /*border: 1px solid #ad3434;*/
+                box-shadow: inset 4px 4px 6px -1px rgba(255, 255, 255, .2);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .numero{
+                    color: v.$blancoclaro;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+
+        @for $i from 1 through 7 {  //ciclo for en css @for $var from start to end
+            &:nth-of-type(#{$i}){
+                circle{
+                    fill: none;
+                    stroke: url(#GradientColor#{$i});
+                    stroke-width: 14px;
+                    stroke-dasharray: 440;
+                    stroke-dashoffset: 440;
+                  //  @if ($i == 1){stroke-dashoffset: 88;} //html  80%
+                   // @if ($i == 2){stroke-dashoffset: 119;} //css 73%
+                   // @if ($i == 3){stroke-dashoffset: 101;} //js 77%
+                   // @if ($i == 4){stroke-dashoffset: 22;}
+                   // @if ($i == 5){stroke-dashoffset: 132;} // php 70%
+                    
+                    animation: anim#{$i} 3s linear forwards;
+                }
+            }
+        }
+
+        @keyframes anim1{
+            100%{stroke-dashoffset: 88;}  //80% html
+        }
+        @keyframes anim2{
+            100%{stroke-dashoffset: 119;}  //73% css
+        }
+        @keyframes anim3{
+            100%{stroke-dashoffset: 101;} // 77% js
+        }
+        @keyframes anim4{
+            100%{stroke-dashoffset: 154;} //65 node/express
+        }
+        @keyframes anim5{
+            100%{stroke-dashoffset: 132;}  //70% php
+        }
+        @keyframes anim6{
+            100%{stroke-dashoffset: 141;} //68%
+        }
+        @keyframes anim7{
+            100%{stroke-dashoffset: 66;}  //85%
+        }
+        
+        svg{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .name{
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            color: v.$blanco;
+        }
+    }
+
+}

@@ -1,0 +1,143 @@
+@use 'variables' as v;
+
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+@mixin xl_tablet {
+    @media (min-width: v.$xl_tablet) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin xl_desktop {
+    @media (min-width: v.$xl_desktop) {
+        @content;
+    }
+}
+
+@mixin xxl_desktop {
+    @media (min-width: v.$xxl_desktop) {
+        @content;
+    }
+}
+
+@mixin btn1($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    padding: 1.5rem 4rem;
+    color: $colorTexto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 1px solid hsla(0, 0%, 40%, .8);
+    border-radius: 5rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+
+    &:hover {
+        background-color: darken( $bgColor, 10% );
+        cursor: pointer;
+    }
+}
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin contenedor{
+    //max-width: 120rem;
+    //width: 95%;
+    width: min(95%, 120rem); //igual que las 2 lineas de arriba...  menor a 1200px toma 95% y mayor a 1200px muestra los 1200ox
+    margin: 0 auto;
+}
+
+@mixin contenedor-sm{
+    //max-width: 120rem;
+    //width: 95%;
+    width: min(95%, 60rem); //igual que las 2 lineas de arriba...  menor a 1200px toma 95% y mayor a 1200px muestra los 1200ox
+    margin: 0 auto;
+}
+
+@mixin texto_fluido($min, $max){
+    font-size: clamp($min, -0.8rem + 10vw ,$max);
+}
+
+@mixin logo{
+    color: v.$blanco;
+    text-align: center;
+    font-weight: 600;
+    //margin-bottom: 2rem;
+   /* @include tablet{
+        text-align: left;
+        margin: 0;
+    }*/
+}
+
+@mixin  enlace {  //registro e iniciar sesion
+    //all: unset; limpia todos los estilos
+    color: v.$grisblack;
+    font-size: 1.4rem;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        color: v.$azul;
+    }   
+}
+
+@mixin sombra {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    
+}
+
+
+@mixin menu-social($color, $size) {
+    &__enlace{ // = <a>...</a>
+        &::before{
+            color: $color;
+            font-size: $size;
+            display: inline-block; // para que se ponga el elemento al lado de otro se puede aplicar pading
+            font-style: normal;
+            text-rendering: auto; //propiedad que se aplica a vectores
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 6 brands";
+        }
+        &[href*="https://facebook.com"]::before{
+            content: "\f39e";
+        }
+        &[href*="https://github.com"]::before{
+            content: "\f09b";
+        }
+        &[href*="https://tiktok.com"]::before{
+            content: "\e07b";
+        }
+        &[href*="https://instagram.com"]::before{
+            content: "\f16d";
+        }
+        &[href*="https://twitter.com"]::before{
+            content: "\f099";
+        }
+        &[href*="https://youtube.com"]::before{
+            content: "\f167";
+        }
+    }
+    &__ocultar{ //== <span></span>
+        display: none;
+    }
+}

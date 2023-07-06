@@ -1,0 +1,118 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.mywork{
+    background-color: v.$background1;
+    position: relative;
+    &__technology{
+        margin-top: 18rem;
+        h4{
+            text-align: center;
+            color: v.$blancoclaro;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+    }
+    &__listado{
+        width: 30rem;
+        @include m.tablet{
+            width: 39rem;
+            padding: 2.7rem !important;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            color: v.$blancoclaro;
+        }
+        
+    }
+    &__logos{
+        display: flex;
+        .logo{
+            display: flex;
+            justify-content: center;
+            .imglogo{
+               background-color: v.$blanco;
+               border-radius: 1.2rem;
+            }
+            img{
+                width: 5rem;
+                height: 100%;
+            }
+        }
+    }
+    &__all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        @include m.tablet{
+            @include m.grid(2, 3rem);
+        }
+        @include m.desktop{
+            @include m.grid(3, 3rem);
+        }
+    }
+    &__work{
+        position: relative;
+        img{
+            //height: 20rem;
+            object-fit: contain;
+            height: 24rem;
+        }
+
+    }
+    &__texto{ //<a></a>
+        color: v.$blanco;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        .resume{
+            position: absolute;
+            left: -50%;
+            opacity: 0;
+            transition: all ease .6s;
+            h4{}
+            p{}
+            .view{
+                padding: 1rem 0;
+                text-align: center;
+                margin-top: 2rem;
+                background-color: rgba(v.$grisclaro, .3);
+                position: relative;
+                &:hover{
+                    background-color: rgba(v.$grisclaro, .7);
+                }
+                &::after{
+                    content: " ";
+                    height: 2px;
+                    width: 100%;
+                    background-color: v.$blanco;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    top: 112%;
+                }
+            }
+        }
+        &:hover{
+            background-color: rgba(v.$negro, .8);
+            cursor: pointer;
+            .resume{
+                left: 10%;
+                opacity: 1;
+            }
+        }
+    }
+
+    svg{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        fill: v.$background2;
+    }
+}

@@ -1,0 +1,140 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contact{
+    background-color: v.$background2;
+    &__contenedor{
+        position: relative;
+        @include m.contenedor;
+        padding-bottom: 33rem;
+    }
+
+    &__all{
+        padding: 1rem 2rem;
+        @include m.grid(1, 3rem);
+        @include m.tablet{
+            @include m.grid(2, 3rem);
+        }
+        @include m.xl_tablet{
+            padding: 1rem 3rem;
+            @include m.grid(3, 3rem);
+        }
+
+    }
+    &__info{
+        padding: 3rem;
+        background-color: v.$background1;
+        text-align: center;
+        .contacto{
+            background-color: #f5f5f5;
+            width: 8rem;
+            height: 8rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+        h3{
+            color: v.$blanco;
+            margin: 3rem 0;
+        }
+        p{
+            color: v.$blancoclaro;
+            &:nth-of-type(1){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__formulario{  // = div
+        position: absolute;
+        bottom: -16%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 100%;
+    }
+    &__form{
+        background-color: v.$background1;
+        padding: 5rem 1.5rem 3rem 1.5rem;
+        width: min(95%, 50rem);
+        margin: 0 auto;
+        @include m.tablet{
+           width: min(95%, 75rem);
+           padding: 5rem 3.5rem 5rem 3.5rem;
+        }
+        .campos{
+            @include m.grid(1, 2rem);
+            @include m.tablet{
+                @include m.grid(2, 2rem);
+            }
+        }
+        .campo{
+            .campo-input{
+                color: v.$blanco;
+                background-color: v.$background2;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 3rem;
+                padding: 1.2rem 1rem 1.2rem 2rem;
+                &::placeholder{
+                    color: v.$blanco
+                }
+            }
+            .campo-textarea{
+                @extend .campo-input;
+                resize: vertical;
+            }
+            &:nth-of-type(5){
+                @include m.tablet{
+                    grid-column: 1/3;
+                }
+            }
+        }
+        .campo-submit{
+            text-align: center;
+            margin-top: 2rem;
+        }
+    } //fin form
+
+    .mapa{
+        z-index: 1;
+        height: 45rem;
+        margin-top: 5rem;
+        &__heading{
+            margin: 0;
+            text-align: left;
+        }
+        &__texto{
+            font-size: 1.8rem;
+            margin: 0;
+        }/*
+        &::after{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            content: " ";
+            width: 100%;
+            height: 45rem;
+            background-color: rgba(v.$blancoclaro, .6);
+            display: block;
+            z-index: 400;
+        }*/
+    }
+    .leaflet-tile-loaded {
+        filter: brightness(1) invert(1) grayscale(10);
+    }
+    .leaflet-container a {
+        color: #000000;
+    }
+    .leaflet-container .leaflet-control-attribution {
+        background: none;
+        background-color: #fff;
+    }
+}

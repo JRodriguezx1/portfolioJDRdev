@@ -1,0 +1,9 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu-redes{ //== <nav>...</nav>
+    @include m.menu-social(v.$blancoclaro, 2rem);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
