@@ -94,22 +94,27 @@
                 font-weight: 300;
             }
         }
-        .home__contbtn{
-            margin-top: 3rem;
-        }
+    }
+
+    &__contenedorbtns{
+        margin-top: 3rem;
+        display: flex;
+        gap: 1.5rem;
     }
 
     &__contadores{
         color: v.$blanco;
         display: flex;
         justify-content: space-around;
+        gap: 1rem;
         margin-top: 6rem;
         padding-bottom: 1rem;
     }
     &__contador{
         text-align: center;
         span{
-            font-size: 4.5rem;
+            @include m.texto_fluido(4rem, 5rem);
+            //font-size: 4.5rem;
             font-weight: 500;
         }
         p{

@@ -80,15 +80,6 @@
             50% {border-color: transparent;}
         }
     }
-
-    &__btn1{
-        @include m.btn1(transparent, v.$blanco);
-        &:hover{
-            background-color: darken(v.$blanco, 10);
-            color: v.$grisoscuro;
-        }
-        width: auto;
-    }
     &__aboutme{ // = <a></a>
         position: absolute;
         color: v.$blanco;

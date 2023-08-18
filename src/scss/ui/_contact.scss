@@ -127,7 +127,7 @@
             z-index: 400;
         }*/
     }
-    .leaflet-tile-loaded {
+    .leaflet-tile-loaded { //dar color gris al mapa
         filter: brightness(1) invert(1) grayscale(10);
     }
     .leaflet-container a {

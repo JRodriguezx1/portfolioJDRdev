@@ -8,19 +8,19 @@
         </a>
 
         <a href="#aboutme" class="dashboard__enlace" >
-                About Me
+                Sobre Mi
         </a>
 
         <a href="#services" class="dashboard__enlace" >
-                Services
+                Servicios
         </a>
 
         <a href="#portafolio" class="dashboard__enlace" >
-                Portfolio
+                Portafolio
         </a>
 
         <a href="#contact" class="dashboard__enlace" >
-                Contact
+                Contacto
         </a>
     </nav>
 </aside>

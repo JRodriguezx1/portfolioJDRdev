@@ -1,9 +1,9 @@
 <div id="up" class="home">
     <div class="home__contenedor">
         <div class="home__descripcion">
-            <p>I Am Julian Rodriguez</p>
+            <p>Soy Julian Rodriguez</p>
             <h1>WEB DEVELOPER</h1>
-            <div class="home__contbtn"><a class="home__btn1" href="#contact">CONTACT ME</a></div>
+            <div class="home__contbtn"><a class="btn1" href="#contact">CONTACTAME</a></div>
         </div>
     </div>
 
@@ -18,28 +18,31 @@
 <div class="aboutme">
     <div class="aboutme__contenedor">
         <div id="aboutme" class="aboutme__titulos">
-            <h1>ABOUT ME</h1>
+            <h1>SOBRE MI</h1>
             <P>Conóceme Más</P>
         </div>
         <div class="aboutme__personalinformation">
             <div class="aboutme__perfil">
-                <h3 class="aboutme__perfiltitulo">I'm <span> Julian Rodriguez, </span> a Web Developer</h3>
-                <p class="aboutme__perfildescripcion">I help you build brand for your business at an affordable price. Thousands of clients have
-                procured exceptional results while working with our dedicated team. when an unknown printer 
-                took a galley of type and scrambled it to make a type specimen book.
-                Delivering work within time and budget which meets client’s requirements is our moto. Lorem 
-                Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+                <h3 class="aboutme__perfiltitulo">Soy <span> Julian Rodriguez, </span>Programador Web</h3>
+                <p class="aboutme__perfildescripcion">Soy un apasionado desarrollador web fullstack, con mas de un año de experiencia en el diseño y programacion de sitios y aplicaciones web
+                    tando del lado del cliente (Front-end) como del lado del servidor (Back-end). Durante mi trayectoria, he tenido la oportunidad de trabajar en diversos proyectos como freelancer,
+                    Esta experiencia me ha brindado una perspectiva integral y valiosa sobre cómo construir soluciones atractivas visualmente, y robustas en su funcionalidad. Estoy en constante
+                    aprendizaje de nuevas tecnologias y tecnicas para mantenerme al dia con las ultimas tendencias, Buscando nuevas oportunidades para aportar mis conocimientos y habilidades.
+                </p>
             </div>
             <div class="aboutme__personaldata">
                 <p>Nombre: <span>Julian Rodriguez</span></p>
                 <p>email: <span>julianlink123@hotmail.com</span> </p>
-                <p>From: <span>Armenia, Quindio</span></p>
-                <div class="home__contbtn"><a id="skills" class="home__btn1" href="">MY SKILLS</a></div>
+                <p>de: <span>Armenia, Quindio</span></p>
+                    <div class="aboutme__contenedorbtns">
+                        <div class="home__contbtn"><a id="skills" class="btn1" href="">MY SKILLS</a></div>
+                        <div class="home__contbtn"><a id="CV" class="btn1" href=""> CV </a></div>
+                    </div>
             </div>
         </div>
         <div id="contador_num" class="aboutme__contadores">
             <div class="aboutme__contador experiance">
-                <span data-valor="20" class="count_num">0+</span>
+                <span data-valor="10" class="count_num">0+</span>
                 <p>Años Experiencia</p>
             </div>
             <div class="aboutme__contador proyects">
@@ -60,8 +63,8 @@
 <div class="services">
     <div class="services__contenedor">
         <div id="services" class="services__titulos">
-            <p>What I Do</p>
-            <h1>My Service</h1>
+            <p>Que Hago</p>
+            <h1>Mis Servicios</h1>
         </div>
         <div class="services__all">
             <div class="services__service">
@@ -69,9 +72,9 @@
                     <div class="services__icon"></div>
                     <i class="fa-solid fa-display"></i>
                 </div>
-                <h3>Web Design</h3>
-                <p>One way to categorize the activities is in terms of the professional’s 
-                area of expertise such as competitive analysis, corporate strategy.</p>
+                <h3>Diseño Web</h3>
+                <p>Diseño sitios web dinamicos y funcionales a la medida de alto impacto, con
+                elementos interactivos para generar una experiencia de usuario atractiva.</p>
             </div>
 
             <div class="services__service">
@@ -79,9 +82,9 @@
                     <div class="services__icon"></div>
                     <i class="fa-solid fa-code"></i>
                 </div>
-                <h3>Web Development</h3>
-                <p>One way to categorize the activities is in terms of the professional’s 
-                area of expertise such as competitive analysis, corporate strategy.</p>
+                <h3>Desarrollo Web</h3>
+                <p>Trabajo en la creacion de codigo, implementando el diseño planeado.
+                Construyendo las funciones Front-End y Back-end</p>
             </div>
 
             <div class="services__service">
@@ -90,18 +93,28 @@
                     <i class="fa-solid fa-mobile-screen"></i>
                 </div>
                 <h3>Responsive Web</h3>
-                <p>One way to categorize the activities is in terms of the professional’s 
-                area of expertise such as competitive analysis, corporate strategy.</p>
+                <p>Los diseño son responsivos asegurando que funcionen bien en dispositivos
+                y tamaños de pantallas desde moviles tablets hasta computadores de escritorio.</p>
             </div>
 
             <div class="services__service">
                 <div class="services__marco">
                     <div class="services__icon"></div>
-                    <i class="fa-solid fa-file-signature"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
                 </div>
-                <h3>Branding Identity</h3>
-                <p>One way to categorize the activities is in terms of the professional’s 
-                area of expertise such as competitive analysis, corporate strategy.</p>
+                <h3>SEO</h3>
+                <p>Optimizo con buenas practicas el sitio web en los motores de busqueda
+                como Google, para que se visiblemente y encontrado mucho mas facil.</p>
+            </div>
+
+            <div class="services__service">
+                <div class="services__marco">
+                    <div class="services__icon"></div>
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h3>Desarrollo de aplicaciones web</h3>
+                <p>Las aplicaciones web a menudo necesitan almacenar y acceder a datos.
+                Utilizando Front-end y Back-End logro dar una mejor experiencia de usuario.</p>
             </div>
         </div>
     </div>
@@ -114,16 +127,27 @@
     <div class="aboutme__contenedor">
         <div id="portafolio" class="aboutme__titulos--mywork">
             <h1>PORTAFOLIO</h1>
-            <P>My Work</P>
+            <P>Mi Trabajo</P>
         </div>
         
         <div class="mywork__all">
-            <div class="mywork__work">
-                <img src="/build/img/webcarlomagno.png" alt="">
+        <div class="mywork__work">
+                <img src="/build/img/portafolio2023.png" alt="img-portafolio">
                 <a class="mywork__texto" target="blank" href="https://fundacioneducativacarlomagno.com.co/">
                     <div class="resume">
-                        <h4>Web Carlomagno</h4>
-                        <p>Proyecto Finalizado</p>
+                        <h4>Web Personal</h4>
+                        <p>portafolio 2023</p>
+                        <p class="view">VIEW</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mywork__work">
+                <img src="/build/img/aplicacion_web_reservacion_citas_2023.png" alt="">
+                <a class="mywork__texto" target="blank" href="/">
+                    <div class="resume">
+                        <h4>Apliacion Web</h4>
+                        <p>Sistemas reservacion de citas 2023</p>
                         <p class="view">VIEW</p>
                     </div>
                 </a>
@@ -133,8 +157,19 @@
                 <img src="/build/img/dashboard.png" alt="">
                 <a class="mywork__texto" target="blank" href="https://fundacioneducativacarlomagno.com.co/login">
                     <div class="resume">
-                        <h4>Dashboard estudiantes</h4>
-                        <p>Proyecto Finalizado</p>
+                        <h4>Aplicacion Web carlomagno</h4>
+                        <p>Dashboard Finalizado 2023</p>
+                        <p class="view">VIEW</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mywork__work">
+                <img src="/build/img/webcarlomagno.png" alt="">
+                <a class="mywork__texto" target="blank" href="https://fundacioneducativacarlomagno.com.co/">
+                    <div class="resume">
+                        <h4>Web Carlomagno</h4>
+                        <p>Sitio Web finalizado en 2022</p>
                         <p class="view">VIEW</p>
                     </div>
                 </a>
@@ -145,7 +180,18 @@
                 <a class="mywork__texto" target="blank" href="https://menupilott.netlify.app/">
                     <div class="resume">
                         <h4>App Web Menupilotto</h4>
-                        <p>Proyecto Finalizado</p>
+                        <p>App web entregado a pilotto 2022</p>
+                        <p class="view">VIEW</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mywork__work">
+                <img src="/build/img/uptask2022.png" alt="">
+                <a class="mywork__texto" target="blank" href="https://menupilott.netlify.app/">
+                    <div class="resume">
+                        <h4>Aplicacion web</h4>
+                        <p>Administrador de tareas Online 2022</p>
                         <p class="view">VIEW</p>
                     </div>
                 </a>
@@ -153,42 +199,47 @@
         </div>
 
         <div class="mywork__technology">
-            <h4>These proyects are developed using:</h4>
+            <h4>Tecnologias usadas:</h4>
             <div class="mywork__listado slider swiper">
                 <div class="mywork__logos swiper-wrapper">
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/html-logo.png" alt="">
+                            <img src="/build/img/html.png" alt="">
                         </div>
                     </div>
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/css-logo.png" alt="">
+                            <img src="/build/img/css.png" alt="">
                         </div>
                     </div>
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/js-logo.png" alt="">
+                            <img src="/build/img/javascript.png" alt="">
                         </div>
                     </div>
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/nodejs-logo.png" alt="">
+                            <img src="/build/img/react3.png" alt="">
                         </div>
                     </div>
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/expressjs-logo.png" alt="">
+                            <img src="/build/img/node1.png" alt="">
                         </div>
                     </div>
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/php-logo.png" alt="">
+                            <img src="/build/img/express.png" alt="">
                         </div>
                     </div>
                     <div class="logo swiper-slide">
                         <div class="imglogo">
-                            <img src="/build/img/mysql-logo.png" alt="">
+                            <img src="/build/img/php8.0.png" alt="">
+                        </div>
+                    </div>
+                    <div class="logo swiper-slide">
+                        <div class="imglogo">
+                            <img src="/build/img/mysql3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -205,14 +256,14 @@
 <div class="contact">
     <div class="contact__contenedor">
         <div id="contact" class="services__titulos">
-            <p>Contact</p>
-            <h1>Contact Information</h1>
+            <p>Contacto</p>
+            <h1>Information Contacto</h1>
         </div>
         <div class="contact__all">
             <div class="contact__info">
                 <div class="contacto"><img src="build/img/ubicacion.png" alt="ubicacion"></div>
-                <h3>Address</h3>
-                <p>Barrio belen Mz A #1</p>
+                <h3>direccion</h3>
+                <p>Zona sur de la ciudad</p>
                 <p>Armenia, Quindio</p>
             </div>
             <div class="contact__info">
@@ -223,22 +274,22 @@
             </div>
             <div class="contact__info">
                 <div class="contacto"><img src="build/img/phone.png" alt=""></div>
-                <h3>Call Now</h3>
+                <h3>LLamame</h3>
                 <p>+57 3042029683</p>
             </div>
         </div>
         <div class="services__titulos">
-            <p>Get In Touch</p>
-            <h1>Have Any Question?</h1>
+            <p>Ponerse En Contacto</p>
+            <h1>Tienes Alguna Pregunta?</h1>
         </div>
         <div class="contact__formulario">
             <form class="contact__form" action="/" method="POST">
                 <div class="campos">
                     <div class="campo">
-                        <input type="text" class="campo-input" placeholder="Name" name="name" required>
+                        <input type="text" class="campo-input" placeholder="Nombre" name="name" required>
                     </div>
                     <div class="campo">
-                        <input type="text" class="campo-input" placeholder="Lastname" name="lastname">
+                        <input type="text" class="campo-input" placeholder="Apellido" name="lastname">
                     </div>
                     <div class="campo">
                         <input type="email" class="campo-input" placeholder="Email" name="email" required>
@@ -247,11 +298,11 @@
                         <input type="text" class="campo-input" placeholder="Subject" name="subject" required>
                     </div>
                     <div class="campo">
-                        <textarea class="campo-textarea" name="message" placeholder="Message" id="" cols="30" rows="10" required></textarea>
+                        <textarea class="campo-textarea" name="message" placeholder="Mensaje" id="" cols="30" rows="10" required></textarea>
                     </div>
                 </div>
                 <div class="campo-submit">
-                    <input class="submit home__btn1" type="submit" value="SEND MESSAGE">
+                    <input class="submit btn1" type="submit" value="ENVIAR MENSAJE">
                 </div>
             </form>
         </div>
@@ -290,5 +341,5 @@
             </a>
         </nav>
     </div>
-    <p class="foter__copyright">&copy;Copyright 2023. All rights reserved</p>
+    <p class="foter__copyright">&copy;Copyright 2023. Desarrollado por julian Rodriguez</p>
 </footer>

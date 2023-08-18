@@ -43,8 +43,8 @@ function resaltar_btns_menuL(){
             e.target.classList.add('dashboard__enlace--actual'); 
             //varhrf = e.target.classList[1];
             //console.log(varhrf.classList[1]);
-            varhrf = e.target.href.slice(23);
-            console.log(varhrf);
+            varhrf = e.target.href.slice(24);
+            //console.log(varhrf);
         });
     });
 }
@@ -55,7 +55,8 @@ function resaltar_btns_scrollear(){ //funcion que al scrollear me resalta los bo
     const observer = new IntersectionObserver(entries =>{
 
         entries.forEach(entrie =>{
-            if(entrie.target.classList.contains('aboutme__contadores')){ //interseccion con la caja de los cantadores
+            //interseccion con la caja de los contadores
+            if(entrie.target.classList.contains('aboutme__contadores')){ 
                 if(entrie.isIntersecting && (entrie.target.firstElementChild.children[0].textContent === '0+'))contador_animado_num();
                 
             }else{
@@ -73,6 +74,7 @@ function resaltar_btns_scrollear(){ //funcion que al scrollear me resalta los bo
                 //  btn_a.classList.remove('dashboard__enlace--actual');
                     //console.log(entries);   
                 //}
+                console.log(entrie.target.id);
                 if(entrie.isIntersecting && (entrie.target.id === varhrf))habilitar=true;
             }
         });
@@ -303,7 +305,7 @@ function mapa(){
     }
 }
 
-function eliminar_msj(){
+function eliminar_msj(){ //mensaje que se genera cuando se envia formulario
     if(document.querySelector('.maquina-escribir')){
         setTimeout(() => {
             document.querySelector('.maquina-escribir').remove();
