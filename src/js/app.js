@@ -16,7 +16,7 @@ function iniciarapp(){
 
 function menu_lateral(){
     const menu_lateral = document.querySelector('#menu_lateral');
-    const cerrar_menuL = document.querySelector('#cerrar-menuL'); 
+    //const cerrar_menuL = document.querySelector('#cerrar-menuL'); 
     const abrir_menuL = document.querySelector('#abrir_menuL');
    /* cerrar_menuL.addEventListener('click', ()=>{
         menu_lateral.classList.remove('mostrar_menuL');
@@ -32,7 +32,7 @@ function resaltar_btns_menuL(){
     btns_a[1].classList.add('dashboard__enlace--actual');
     
     btns_a.forEach((btn_a)=>{
-        btn_a.addEventListener('click', function(e){ 
+        btn_a.addEventListener('click', function(e){
             habilitar=false; //me deshabilita la interseccion del intersectionobserver para que no particie la class de resalto 2 veces
             btns_a.forEach(btn_a =>{  
         //se busca elemento anterior resaltado para eliminar clase
@@ -74,8 +74,12 @@ function resaltar_btns_scrollear(){ //funcion que al scrollear me resalta los bo
                 //  btn_a.classList.remove('dashboard__enlace--actual');
                     //console.log(entries);   
                 //}
-                console.log(entrie.target.id);
-                if(entrie.isIntersecting && (entrie.target.id === varhrf))habilitar=true;
+                if(entrie.isIntersecting && (entrie.target.id === varhrf)){
+                    const menu_lateral = document.querySelector('#menu_lateral');
+                    menu_lateral.classList.remove('dashboard__mostrar_menuL');
+                    habilitar=true;
+                    varhrf = '';
+                }
             }
         });
       
@@ -85,7 +89,7 @@ function resaltar_btns_scrollear(){ //funcion que al scrollear me resalta los bo
   
     observer.observe(document.querySelector('#contador_num'));  //caja de contadores a observar
     observer.observe(document.querySelector('#up'));
-    observer.observe(document.querySelector('#aboutme'));
+    observer.observe(document.querySelector('.aboutme__perfildescripcion')); //#aboutme
     observer.observe(document.querySelector('#services'));
     observer.observe(document.querySelector('#portafolio'));
     observer.observe(document.querySelector('#contact'));
@@ -115,12 +119,30 @@ function skills(){
                                     <defs>
                                         <linearGradient id="GradientColor1">
                                             <stop offset="0%" stop-color="#090979" />
-                                            <stop offset="100%" stop-color="#005bff" />
+                                            <stop offset="100%" stop-color="#00d4ff" />
                                         </linearGradient>
                                     </defs>
                                     <circle cx="80" cy="80" r="70" stroke-linecap="round" />
                                 </svg>
-                                <p class="name">HTML</p>    
+                                <p class="name">HTML5/CCS</p>    
+                            </div>
+
+                            <div class="skills__skill">
+                                <div class="afuera">
+                                    <div class="adentro">
+                                        <p class="numero">80%</p>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor2">
+                                            <stop offset="0%" stop-color="#00d4ff" />
+                                            <stop offset="100%" stop-color="#090979" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                                <p class="name">HTML5/CCS</p>    
                             </div>
 
                             <div class="skills__skill">
@@ -131,7 +153,7 @@ function skills(){
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
-                                        <linearGradient id="GradientColor2">
+                                        <linearGradient id="GradientColor3">
                                             <stop offset="0%" stop-color="#00d4ff" />
                                             <stop offset="100%" stop-color="#005bff" />
                                         </linearGradient>
@@ -149,7 +171,7 @@ function skills(){
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
-                                        <linearGradient id="GradientColor3">
+                                        <linearGradient id="GradientColor4">
                                             <stop offset="0%" stop-color="#ffd100" />
                                             <stop offset="100%" stop-color="#faff86" />
                                         </linearGradient>
@@ -167,7 +189,7 @@ function skills(){
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
-                                        <linearGradient id="GradientColor4">
+                                        <linearGradient id="GradientColor5">
                                             <stop offset="60%" stop-color="#79bb4b" />
                                             <stop offset="100%" stop-color="#ebd825" />
                                         </linearGradient>
@@ -185,7 +207,7 @@ function skills(){
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
-                                        <linearGradient id="GradientColor5">
+                                        <linearGradient id="GradientColor6">
                                             <stop offset="0%" stop-color="#6d6bf9" />
                                             <stop offset="100%" stop-color="#5529a7" />
                                         </linearGradient>
@@ -203,7 +225,7 @@ function skills(){
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
-                                        <linearGradient id="GradientColor6">
+                                        <linearGradient id="GradientColor7">
                                             <stop offset="50%" stop-color="#3573b0" />
                                             <stop offset="50%" stop-color="#eec025" />
                                         </linearGradient>
@@ -221,7 +243,7 @@ function skills(){
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
-                                        <linearGradient id="GradientColor7">
+                                        <linearGradient id="GradientColor8">
                                             <stop offset="0%" stop-color="#e91e63" />
                                             <stop offset="100%" stop-color="#673ab7" />
                                         </linearGradient>

@@ -24,7 +24,7 @@
         <div class="aboutme__personalinformation">
             <div class="aboutme__perfil">
                 <h3 class="aboutme__perfiltitulo">Soy <span> Julian Rodriguez, </span>Programador Web</h3>
-                <p class="aboutme__perfildescripcion">Soy un apasionado desarrollador web fullstack, con mas de un año de experiencia en el diseño y programacion de sitios y aplicaciones web
+                <p id="aboutme" class="aboutme__perfildescripcion">Soy un apasionado desarrollador web fullstack, con mas de un año de experiencia en el diseño y programacion de sitios y aplicaciones web
                     tando del lado del cliente (Front-end) como del lado del servidor (Back-end). Durante mi trayectoria, he tenido la oportunidad de trabajar en diversos proyectos como freelancer,
                     Esta experiencia me ha brindado una perspectiva integral y valiosa sobre cómo construir soluciones atractivas visualmente, y robustas en su funcionalidad. Estoy en constante
                     aprendizaje de nuevas tecnologias y tecnicas para mantenerme al dia con las ultimas tendencias, Buscando nuevas oportunidades para aportar mis conocimientos y habilidades.
@@ -36,7 +36,7 @@
                 <p>de: <span>Armenia, Quindio</span></p>
                     <div class="aboutme__contenedorbtns">
                         <div class="home__contbtn"><a id="skills" class="btn1" href="">MY SKILLS</a></div>
-                        <div class="home__contbtn"><a id="CV" class="btn1" href=""> CV </a></div>
+                        <div class="home__contbtn"><a id="CV" class="btn1" href="/"> CV </a></div>
                     </div>
             </div>
         </div>
@@ -257,7 +257,7 @@
     <div class="contact__contenedor">
         <div id="contact" class="services__titulos">
             <p>Contacto</p>
-            <h1>Information Contacto</h1>
+            <h1>Information De Contacto</h1>
         </div>
         <div class="contact__all">
             <div class="contact__info">
@@ -321,22 +321,22 @@
     <div class="foter__logo"><a href="/" class="dashboard__logo">JDR</a></div>
     <div class="foter__rrss">
         <nav class="menu-redes">
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/C%C3%B3digo-Con-Juan-103341632130628">
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/">
             <span class="menu-redes__ocultar">Facebook</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/codigoconjuan">
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/">
             <span class="menu-redes__ocultar">Twitter</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/codigoconjuan">
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/">
             <span class="menu-redes__ocultar">YouTube</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/codigoconjuan">
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/">
             <span class="menu-redes__ocultar">Instagram</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/@codigoconjuan">
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/@">
             <span class="menu-redes__ocultar">Tiktok</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/codigoconjuan">
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/">
             <span class="menu-redes__ocultar">Tiktok</span>
             </a>
         </nav>

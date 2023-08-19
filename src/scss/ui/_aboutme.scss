@@ -185,7 +185,7 @@
         }
 
 
-        @for $i from 1 through 7 {  //ciclo for en css @for $var from start to end
+        @for $i from 1 through 8 {  //ciclo for en css @for $var from start to end
             &:nth-of-type(#{$i}){
                 circle{
                     fill: none;
@@ -224,6 +224,9 @@
         }
         @keyframes anim7{
             100%{stroke-dashoffset: 66;}  //85%
+        }
+        @keyframes anim8{
+            100%{stroke-dashoffset: 69;}  //85%
         }
         
         svg{
