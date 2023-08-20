@@ -131,12 +131,23 @@
         </div>
         
         <div class="mywork__all">
-        <div class="mywork__work">
+            <div class="mywork__work">
                 <img src="/build/img/portafolio2023.png" alt="img-portafolio">
                 <a class="mywork__texto" target="blank" href="https://fundacioneducativacarlomagno.com.co/">
                     <div class="resume">
                         <h4>Web Personal</h4>
                         <p>portafolio 2023</p>
+                        <p class="view">VIEW</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mywork__work">
+                <img src="/build/img/agenciadeviajes2.png" alt="img-portafolio">
+                <a class="mywork__texto" target="blank" href="https://agenciaviajes-ytqc.onrender.com/">
+                    <div class="resume">
+                        <h4>Sitio web Node/expressJS-MySQL</h4>
+                        <p>Web Agencia De Viajes 2023</p>
                         <p class="view">VIEW</p>
                     </div>
                 </a>
