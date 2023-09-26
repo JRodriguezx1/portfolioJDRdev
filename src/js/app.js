@@ -112,7 +112,7 @@ function skills(){
                             <div class="skills__skill">
                                 <div class="afuera">
                                     <div class="adentro">
-                                        <p class="numero">80%</p>
+                                        <p class="numero"></p>
                                     </div>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -122,7 +122,7 @@ function skills(){
                                             <stop offset="100%" stop-color="#00d4ff" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
                                 </svg>
                                 <p class="name">HTML5/CCS</p>    
                             </div>
@@ -130,53 +130,35 @@ function skills(){
                             <div class="skills__skill">
                                 <div class="afuera">
                                     <div class="adentro">
-                                        <p class="numero">80%</p>
+                                        <p class="numero"></p>
                                     </div>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
                                         <linearGradient id="GradientColor2">
-                                            <stop offset="0%" stop-color="#00d4ff" />
-                                            <stop offset="100%" stop-color="#090979" />
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                                </svg>
-                                <p class="name">HTML5/CCS</p>    
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
+                                </svg>    
+                                <p class="name">SASS</p>
                             </div>
 
                             <div class="skills__skill">
                                 <div class="afuera">
                                     <div class="adentro">
-                                        <p class="numero">73%</p>
+                                        <p class="numero"></p>
                                     </div>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                     <defs>
                                         <linearGradient id="GradientColor3">
-                                            <stop offset="0%" stop-color="#00d4ff" />
-                                            <stop offset="100%" stop-color="#005bff" />
-                                        </linearGradient>
-                                    </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                                </svg>   
-                                <p class="name">CSS</p> 
-                            </div>
-
-                            <div class="skills__skill">
-                                <div class="afuera">
-                                    <div class="adentro">
-                                        <p class="numero">77%</p>
-                                    </div>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                    <defs>
-                                        <linearGradient id="GradientColor4">
                                             <stop offset="0%" stop-color="#ffd100" />
                                             <stop offset="100%" stop-color="#faff86" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
                                 </svg>    
                                 <p class="name">JAVASCRIPT</p>
                             </div>
@@ -184,7 +166,25 @@ function skills(){
                             <div class="skills__skill">
                                 <div class="afuera">
                                     <div class="adentro">
-                                        <p class="numero">65%</p>
+                                        <p class="numero"></p>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor4">
+                                            <stop offset="0%" stop-color="#39dad3" />
+                                            <stop offset="100%" stop-color="#005bff" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
+                                </svg>   
+                                <p class="name">REACT</p> 
+                            </div>
+
+                            <div class="skills__skill">
+                                <div class="afuera">
+                                    <div class="adentro">
+                                        <p class="numero"></p>
                                     </div>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -194,15 +194,15 @@ function skills(){
                                             <stop offset="100%" stop-color="#ebd825" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
                                 </svg>    
-                                <p class="name">Node.js/Express.js</p>
+                                <p class="name">Node/Express.js</p>
                             </div>
 
                             <div class="skills__skill">
                                 <div class="afuera">
                                     <div class="adentro">
-                                        <p class="numero">70%</p>
+                                        <p class="numero"></p>
                                     </div>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -212,7 +212,7 @@ function skills(){
                                             <stop offset="100%" stop-color="#5529a7" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
                                 </svg>    
                                 <p class="name">PHP</p>
                             </div>
@@ -220,7 +220,7 @@ function skills(){
                             <div class="skills__skill">
                                 <div class="afuera">
                                     <div class="adentro">
-                                        <p class="numero">68%</p>
+                                        <p class="numero"></p>
                                     </div>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -230,28 +230,12 @@ function skills(){
                                             <stop offset="50%" stop-color="#eec025" />
                                         </linearGradient>
                                     </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    <circle cx="70" cy="70" r="59" stroke-linecap="round" />
                                 </svg>    
                                 <p class="name">MySQL</p>
                             </div>
 
-                            <div class="skills__skill">
-                                <div class="afuera">
-                                    <div class="adentro">
-                                        <p class="numero">85%</p>
-                                    </div>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                    <defs>
-                                        <linearGradient id="GradientColor8">
-                                            <stop offset="0%" stop-color="#e91e63" />
-                                            <stop offset="100%" stop-color="#673ab7" />
-                                        </linearGradient>
-                                    </defs>
-                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                                </svg>    
-                                <p class="name">SASS</p>
-                            </div>
+                            
                             
                         </div>
                     </div>

@@ -76,10 +76,14 @@
             left: -50%;
             opacity: 0;
             transition: all ease .6s;
-            h4{}
-            p{}
+            width: 100%;
+            text-align: center;
+            .contenedor-view{
+                display: flex;
+                justify-content: center;
+            }
             .view{
-                padding: 1rem 0;
+                padding: 1rem 3rem;
                 text-align: center;
                 margin-top: 2rem;
                 background-color: rgba(v.$grisclaro, .3);
@@ -103,7 +107,8 @@
             background-color: rgba(v.$negro, .8);
             cursor: pointer;
             .resume{
-                left: 10%;
+                left: 50%;
+                transform: translateX(-50%);
                 opacity: 1;
             }
         }

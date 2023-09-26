@@ -24,10 +24,9 @@
         <div class="aboutme__personalinformation">
             <div class="aboutme__perfil">
                 <h3 class="aboutme__perfiltitulo">Soy <span> Julian Rodriguez, </span>Programador Web</h3>
-                <p id="aboutme" class="aboutme__perfildescripcion">Soy un apasionado desarrollador web fullstack, con mas de un año de experiencia en el diseño y programacion de sitios y aplicaciones web
-                    tando del lado del cliente (Front-end) como del lado del servidor (Back-end). Durante mi trayectoria, he tenido la oportunidad de trabajar en diversos proyectos como freelancer,
-                    Esta experiencia me ha brindado una perspectiva integral y valiosa sobre cómo construir soluciones atractivas visualmente, y robustas en su funcionalidad. Estoy en constante
-                    aprendizaje de nuevas tecnologias y tecnicas para mantenerme al dia con las ultimas tendencias, Buscando nuevas oportunidades para aportar mis conocimientos y habilidades.
+                <p id="aboutme" class="aboutme__perfildescripcion">Soy un apasionado desarrollador web, con mas de un año de experiencia en el diseño y programacion de sitios y aplicaciones web. Actualmente trabajo como desarrollador Fullstack, tengo experiencia creando y diseñando aplicaciones web que cobinan tecnologias del lado del cliente(Frontend) y del servidor(Backend).
+
+Disfruto la naturaleza Dinamica de mi trabajo ya que me permite aportar ideas y soluciones. En mi portafolio encontraras proyectos simples hasta complejos software as a services.
                 </p>
             </div>
             <div class="aboutme__personaldata">
@@ -36,7 +35,7 @@
                 <p>de: <span>Armenia, Quindio</span></p>
                     <div class="aboutme__contenedorbtns">
                         <div class="home__contbtn"><a id="skills" class="btn1" href="">MY SKILLS</a></div>
-                        <div class="home__contbtn"><a id="CV" class="btn1" href="/"> CV </a></div>
+                        <div class="home__contbtn"><a id="CV" class="btn1" href="/build/Curriculum vitae.pdf" target="_blank"> CV </a></div>
                     </div>
             </div>
         </div>
@@ -46,7 +45,7 @@
                 <p>Años Experiencia</p>
             </div>
             <div class="aboutme__contador proyects">
-                <span data-valor="50" class="count_num">0+</span>
+                <span data-valor="70" class="count_num">0+</span>
                 <p>Proyectos hechos</p>
             </div>
             <div class="aboutme__contador technology">
@@ -133,11 +132,13 @@
         <div class="mywork__all">
             <div class="mywork__work">
                 <img src="/build/img/portafolio2023.png" alt="img-portafolio">
-                <a class="mywork__texto" target="blank" href="https://fundacioneducativacarlomagno.com.co/">
+                <a class="mywork__texto" target="blank" href="https://jdrdev.alwaysdata.net/">
                     <div class="resume">
                         <h4>Web Personal</h4>
                         <p>portafolio 2023</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -148,18 +149,22 @@
                     <div class="resume">
                         <h4>Sitio web Node/expressJS-MySQL</h4>
                         <p>Web Agencia De Viajes 2023</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
 
             <div class="mywork__work">
                 <img src="/build/img/aplicacion_web_reservacion_citas_2023.png" alt="">
-                <a class="mywork__texto" target="blank" href="/">
+                <a class="mywork__texto" target="blank" href="https://www.intermixapp.net">
                     <div class="resume">
                         <h4>Apliacion Web</h4>
                         <p>Sistemas reservacion de citas 2023</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -170,7 +175,9 @@
                     <div class="resume">
                         <h4>Aplicacion Web carlomagno</h4>
                         <p>Dashboard Finalizado 2023</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -181,29 +188,48 @@
                     <div class="resume">
                         <h4>Web Carlomagno</h4>
                         <p>Sitio Web finalizado en 2022</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
 
             <div class="mywork__work">
                 <img src="/build/img/app.png" alt="">
-                <a class="mywork__texto" target="blank" href="https://menupilott.netlify.app/">
+                <a class="mywork__texto" target="blank" href="https://menupilotto.netlify.app/">
                     <div class="resume">
                         <h4>App Web Menupilotto</h4>
                         <p>App web entregado a pilotto 2022</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
 
             <div class="mywork__work">
                 <img src="/build/img/uptask2022.png" alt="">
-                <a class="mywork__texto" target="blank" href="https://menupilott.netlify.app/">
+                <a class="mywork__texto" target="blank" href="http://taskmanager.domcloud.io/">
                     <div class="resume">
                         <h4>Aplicacion web</h4>
                         <p>Administrador de tareas Online 2022</p>
-                        <p class="view">VIEW</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mywork__work">
+                <img src="/build/img/bienesraicez.png" alt="">
+                <a class="mywork__texto" target="blank" href="http://bienesraiz.domcloud.io/">
+                    <div class="resume">
+                        <h4>Sitio web</h4>
+                        <p>web bienes raices sass, Js, php mysql 2021</p>
+                        <div class="contenedor-view">
+                            <p class="view">VIEW</p>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -274,7 +300,7 @@
             <div class="contact__info">
                 <div class="contacto"><img src="build/img/ubicacion.png" alt="ubicacion"></div>
                 <h3>direccion</h3>
-                <p>Zona sur de la ciudad</p>
+                <p>Zona centro de la ciudad</p>
                 <p>Armenia, Quindio</p>
             </div>
             <div class="contact__info">

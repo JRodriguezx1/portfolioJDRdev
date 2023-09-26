@@ -72,6 +72,7 @@
         line-height: 1.8;
         color: v.$blancoclaro;
         font-size: 1.6rem;
+        white-space: pre-wrap;
     }
     &__personaldata{
         margin-top: 6rem;
@@ -157,11 +158,11 @@
     }
     &__skill{
         position: relative;
-        width: 160px;
+        width: 140px;
         //height: 160px;
         .afuera{
-            width: 160px;
-            height: 160px;
+            width: 140px;
+            height: 140px;
             /*border: 1px solid #c0e3ee;*/
             box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, .15), -4px -4px 12px -1px rgba(255, 255, 255, .7);
             border-radius: 50%;
@@ -169,8 +170,8 @@
             justify-content: center;
             align-items: center;
             .adentro{
-                width: 120px;
-                height: 120px;
+                width: 88px;
+                height: 88px;
                 /*border: 1px solid #ad3434;*/
                 box-shadow: inset 4px 4px 6px -1px rgba(255, 255, 255, .2);
                 border-radius: 50%;
@@ -185,12 +186,12 @@
         }
 
 
-        @for $i from 1 through 8 {  //ciclo for en css @for $var from start to end
+        @for $i from 1 through 7 {  //ciclo for en css @for $var from start to end
             &:nth-of-type(#{$i}){
                 circle{
                     fill: none;
                     stroke: url(#GradientColor#{$i});
-                    stroke-width: 14px;
+                    stroke-width: 20px;
                     stroke-dasharray: 440;
                     stroke-dashoffset: 440;
                   //  @if ($i == 1){stroke-dashoffset: 88;} //html  80%
@@ -199,34 +200,31 @@
                    // @if ($i == 4){stroke-dashoffset: 22;}
                    // @if ($i == 5){stroke-dashoffset: 132;} // php 70%
                     
-                    animation: anim#{$i} 3s linear forwards;
+                    animation: anim#{$i} 2.5s linear forwards;
                 }
             }
         }
 
         @keyframes anim1{
-            100%{stroke-dashoffset: 88;}  //80% html
+            100%{stroke-dashoffset: 25;}  //80% html
         }
         @keyframes anim2{
-            100%{stroke-dashoffset: 119;}  //73% css
+            100%{stroke-dashoffset: 25;}  //73% css
         }
         @keyframes anim3{
-            100%{stroke-dashoffset: 101;} // 77% js
+            100%{stroke-dashoffset: 25;} // 77% js
         }
         @keyframes anim4{
-            100%{stroke-dashoffset: 154;} //65 node/express
+            100%{stroke-dashoffset: 25;} //65 node/express
         }
         @keyframes anim5{
-            100%{stroke-dashoffset: 132;}  //70% php
+            100%{stroke-dashoffset: 25;}  //70% php
         }
         @keyframes anim6{
-            100%{stroke-dashoffset: 141;} //68%
+            100%{stroke-dashoffset: 25;} //68%
         }
         @keyframes anim7{
-            100%{stroke-dashoffset: 66;}  //85%
-        }
-        @keyframes anim8{
-            100%{stroke-dashoffset: 69;}  //85%
+            100%{stroke-dashoffset: 25;}  //85%
         }
         
         svg{
@@ -236,7 +234,7 @@
         }
 
         .name{
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             margin-top: 1rem;
             color: v.$blanco;
         }

@@ -1,7 +1,7 @@
 {
-  "name": "devwebcamp-php-mvc-mysql",
+  "name": "portafolio-web",
   "version": "1.0.0",
-  "description": "Proyecto Final Desarrollo Web Completo con @codigoconjuan",
+  "description": "Portafolio web js, sass, php",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev"
