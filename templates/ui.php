@@ -45,7 +45,7 @@ Disfruto la naturaleza Dinamica de mi trabajo ya que me permite aportar ideas y 
                 <p>Años Experiencia</p>
             </div>
             <div class="aboutme__contador proyects">
-                <span data-valor="70" class="count_num">0+</span>
+                <span data-valor="80" class="count_num">0+</span>
                 <p>Proyectos hechos</p>
             </div>
             <div class="aboutme__contador technology">
