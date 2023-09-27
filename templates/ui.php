@@ -45,7 +45,7 @@ Disfruto la naturaleza Dinamica de mi trabajo ya que me permite aportar ideas y 
                 <p>Años Experiencia</p>
             </div>
             <div class="aboutme__contador proyects">
-                <span data-valor="80" class="count_num">0+</span>
+                <span data-valor="100" class="count_num">0+</span>
                 <p>Proyectos hechos</p>
             </div>
             <div class="aboutme__contador technology">
@@ -361,20 +361,20 @@ Disfruto la naturaleza Dinamica de mi trabajo ya que me permite aportar ideas y 
             <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/">
             <span class="menu-redes__ocultar">Facebook</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/">
+            <!--<a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/">
             <span class="menu-redes__ocultar">Twitter</span>
-            </a> 
+            </a> -->
             <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/">
             <span class="menu-redes__ocultar">YouTube</span>
             </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/">
+            <!--<a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/">
             <span class="menu-redes__ocultar">Instagram</span>
             </a> 
             <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/@">
             <span class="menu-redes__ocultar">Tiktok</span>
-            </a> 
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/">
-            <span class="menu-redes__ocultar">Tiktok</span>
+            </a> -->
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/JRodriguezx1">
+            <span class="menu-redes__ocultar">github</span>
             </a>
         </nav>
     </div>
