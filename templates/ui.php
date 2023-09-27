@@ -223,7 +223,7 @@ Disfruto la naturaleza Dinamica de mi trabajo ya que me permite aportar ideas y 
 
             <div class="mywork__work">
                 <img src="/build/img/bienesraicez.png" alt="">
-                <a class="mywork__texto" target="blank" href="http://bienesraiz.domcloud.io/">
+                <a class="mywork__texto" target="blank" href="http://bienesraices100.domcloud.io/">
                     <div class="resume">
                         <h4>Sitio web</h4>
                         <p>web bienes raices sass, Js, php mysql 2021</p>
